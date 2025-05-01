@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- UTF-8 문자 인코딩 설정 -->
+    <meta charset="UTF-8">
+    <!-- 반응형 웹을 위한 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 웹페이지 제목 설정 -->
+    <title>Weather App</title>
+    <!-- CSS 스타일시트 연결 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 섹션 시작 -->
+    <header>
+        <!-- 앱 제목 -->
+        <h1>Weather App</h1>
+        <!-- 앱 설명 -->
+        <p>Get the latest weather updates for your city</p>
+    </header>
+    <!-- 메인 콘텐츠 영역 시작 -->
+    <main>
+        <!-- 도시 검색 입력 섹션 -->
+        <section class="search-bar">
+            <!-- 도시명 입력 필드 -->
+            <input type="text" id="city" placeholder="Enter city name">
+            <!-- 검색 버튼 -->
+            <button id="search-btn">Search</button>
+        </section>
+        <!-- 날씨 정보 표시 섹션 -->
+        <section class="weather-info">
+            <!-- 선택된 도시 이름 표시 -->
+            <h2 id="city-name">City Name</h2>
+            <!-- 온도 정보 -->
+            <p id="temperature">Temperature: --</p>
+            <!-- 날씨 설명 -->
+            <p id="weather-description">Weather: --</p>
+            <!-- 습도 정보 -->
+            <p id="humidity">Humidity: --</p>
+            <!-- 풍속 정보 -->
+            <p id="wind-speed">Wind Speed: --</p>
+        </section>
+    </main>
+    <!-- 자바스크립트 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
